@@ -20,9 +20,9 @@ int shift_and_add(int a, int b, int m) {
 }
 
 int main() {
-    int a = 0x57; // 0101 0111: x^6 + x^4 + x^2 + x + 1
-    int b = 0x83; // 1000 0011: x^7 + x + 1
-    int m = 0x11B; // 1 0001 1011: x^8 + x^4 + x^3 + x + 1
+    int a = 0x05; // x^2 + 1
+    int b = 0x03; // x + 1
+    int m = 0x13; 
 
     int result = shift_and_add(a, b, m);
     printf("Result: 0x%X\n", result);
